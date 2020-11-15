@@ -4,6 +4,7 @@ const hbs = require("hbs");
 const geocode = require("./utils/geocode");
 const openweathermap = require("./utils/openweatherapi");
 const cl = console.log;
+const port = process.env.PORT || 3000;
 
 /**
  * Defined Paths for public directory and templates directory using
@@ -91,6 +92,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   cl("sarvesh server is started");
 });
