@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 async function openweathermap(positions) {
-  //Necessary Declarations
+  //Necessary Declaration
   const lati = positions.latitude;
   const long = positions.longitude;
   const placename = positions.placename;
