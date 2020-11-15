@@ -11,7 +11,7 @@ submitButton.addEventListener("click", () => {
 });
 
 async function getWeatherDetails(query) {
-  const res = await fetch(`http://localhost:3000/weather?address=${query}`);
+  const res = await fetch(`/weather?address=${query}`);
   const data = await res.json();
   if (data.error) {
     weatherdiv.textContent = data.error;

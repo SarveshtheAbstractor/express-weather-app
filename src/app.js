@@ -32,7 +32,7 @@ hbs.registerPartials(partialsDirectory);
  * Setting up the Necessary Routes for home, help, about and Weather
  * Weather is our back end to serve JSON
  */
-app.get("", (req, res) => {
+app.get("/", (req, res) => {
   res.render("index", {
     title: "Weather",
     name: "Sarvesh Hiwase",
